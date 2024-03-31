@@ -35,14 +35,14 @@ app.get('/generate', async (req, res) => {
     {
       input: {
         width: 1024,
-        height: 1400,
+        height: 1024,
         prompt: prompt,
         scheduler: "DPM++SDE",
         num_outputs: 1,
         guidance_scale: 2,
         apply_watermark: true,
-        negative_prompt: "",
-        num_inference_steps: 8
+        negative_prompt: "CGI, Unreal, Airbrushed, Digital",
+        num_inference_steps: 5
       }
     }
   );
