@@ -1,0 +1,19 @@
+{
+  "name": "sdxl",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.19.2",
+    "install": "^0.13.0",
+    "npm": "^10.5.0",
+    "replicate": "^0.29.1"
+  }
+}
