@@ -52,7 +52,7 @@ app.get('/generate', async (req, res) => {
       res.render('result', { imageUrl: output[0] });
     } catch (error) {
       console.error('Error generating image:', error);
-      res.status(500).send('Error generating image. Please try again later.');
+      res.status(500).send('由于道德审查，画图失败，请返回重试.');
     }
   });
 
