@@ -32,13 +32,27 @@
       border: none;
       cursor: pointer;
     }
+    button:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
   </style>
 </head>
 <body>
   <h1>在线画图</h1>
   <form action="/generate" method="GET">
     <textarea name="prompt" placeholder="请输入prompt" required></textarea>
-    <button type="submit">生成图片</button>
+    <button type="submit" id="generateBtn">生成图片</button>
   </form>
+
+  <script>
+    const generateBtn = document.getElementById('generateBtn');
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', (event) => {
+      generateBtn.disabled = true;
+      generateBtn.textContent = '生成中...';
+    });
+  </script>
 </body>
 </html>
