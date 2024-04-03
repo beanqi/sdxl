@@ -39,7 +39,7 @@ app.get('/generate', async (req, res) => {
           input: {
             seed: 29725,
             width: 1024,
-            height: 1400,
+            height: 1600,
             prompt: translatePrompt(prompt),
             strength: 1,
             scheduler: "K_EULER_ANCESTRAL",
